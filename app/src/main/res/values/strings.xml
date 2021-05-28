@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">SD6501</string>
+    <string name="login">Login</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="checkBox">Remember Me</string>
+    <string name="signUp">Sign Up</string>
+    <string name="myList">My List</string>
+    <string name="profileList">Welcome to my list</string>
+    <string name="website">MyMangaList</string>
+    <string name="Name">Enter your new username</string>
+    <string name="password">Password: </string>
+    <string name="newPassword">Enter your new password</string>
+    <string name="confirmPassword">Confirm your new password</string>
+    <string name="emailAddress">Enter your email address</string>
+    <string name="confirmSignUp">Continue</string>
+    <string name="createNewAccount">Create a new Account</string>
+    <string name="userName">Username: </string>
+    <string name="email">Email: </string>
+    <string name="confirmPassword2">Confirm Password: </string>
+    <string name="home">Home</string>
+    <string name="username">Enter your username</string>
+    <string name="descriptionMonster">Kenzou Tenma, a renowned Japanese neurosurgeon working in post-war Germany, faces a difficult choice: to operate on Johan Liebert, an orphan boy on the verge of death, or on the mayor of Düsseldorf. In the end, Tenma decides to gamble his reputation by saving Johan, effectively leaving the mayor for dead.
+
+As a consequence of his actions, hospital director Heinemann strips Tenma of his position, and Heinemanns daughter Eva breaks off their engagement. Disgraced and shunned by his colleagues, Tenma loses all hope of a successful career—that is, until the mysterious killing of Heinemann gives him another chance.
+
+Nine years later, Tenma is the head of the surgical department and close to becoming the director himself. Although all seems well for him at first, he soon becomes entangled in a chain of gruesome murders that have taken place throughout Germany. The culprit is a monster—the same one that Tenma saved on that fateful day nine years ago.</string>
+
+
+    <string name="descriptionHomunulus">Susumu Nakoshi is a middle-aged man who spends his days between a lavish first-class hotel and a park full of homeless people. One day, an eccentric young man approaches Nakoshi in search of subjects willing to partake in trepanation—the procedure of drilling a hole in the skull.
+
+This mysterious person claims that Nakoshi is the perfect man for the experiment. Initially rejecting the offer, he doubles back on his decision after his car gets towed off. Nakoshi agrees to let Manabu Ito, a 22-year-old medical student, drill a hole in his skull in exchange for 700,000 yen. The procedure bears no results at first, with Nakoshi showing no abnormalities. This normalcy comes to an abrupt end, however, when Nakoshi begins seeing the homunculus in every person. With his perception distorted, how will Nakoshi face these homunculi?</string>
+
+   <string name="descriptionTokyo">Lurking within the shadows of Tokyo are frightening beings known as "ghouls," who satisfy their hunger by feeding on humans once night falls. An organization known as the Commission of Counter Ghoul (CCG) has been established in response to the constant attacks on citizens and as a means of purging these creatures. However, the problem lies in identifying ghouls as they disguise themselves as humans, living amongst the masses so that hunting prey will be easier. Ken Kaneki, an unsuspecting university freshman, finds himself caught in a world between humans and ghouls when his date turns out to be a ghoul after his flesh.
+
+Barely surviving this encounter after being taken to a hospital, he discovers that he has turned into a half-ghoul as a result of the surgery he received. Unable to satisfy his intense craving for human meat through conventional means, Kaneki is taken in by friendly ghouls who run a coffee shop in order to help him with his transition. As he begins what he thinks will be a peaceful new life, little does he know that he is about to find himself at the center of a war between his new comrades and the forces of the CCG, and that his new existence has caught the attention of ghouls all over Tokyo.</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.CircularRevealRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+
+
+    <include
+        android:id="@+id/signUpToolbar"
+        layout="@layout/signuptoolbar"
+        />
+
+    <TextView
+        android:id="@+id/createAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/signUpToolbar"
+        android:layout_centerHorizontal="true"
+        android:text="@string/createNewAccount"
+        android:textSize="20dp"
+        android:layout_marginTop="40dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/username1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/createAccount"
+        android:text="@string/userName"
+        android:layout_alignLeft="@id/newUsername"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+
+
+    <EditText
+        android:id="@+id/newUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:inputType="textPersonName"
+        android:hint="@string/Name"
+        android:layout_below="@+id/username1"
+        android:layout_centerHorizontal="true"
+
+     />
+
+    <TextView
+        android:id="@+id/email1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newUsername"
+        android:text="@string/email"
+        android:layout_alignLeft="@id/newUsername"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/newEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:inputType="textEmailAddress"
+        android:hint="@string/emailAddress"
+        android:layout_below="@+id/email1"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/password1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newEmail"
+        android:text="@string/password"
+        android:layout_alignLeft="@id/newUsername"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/newPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:hint="@string/newPassword"
+        android:inputType="textPassword"
+        android:layout_below="@+id/password1"
+        android:layout_centerHorizontal="true"/>
+
+
+    <TextView
+        android:id="@+id/password2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/newPassword"
+        android:text="@string/confirmPassword2"
+        android:layout_alignLeft="@id/newUsername"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        />
+
+    <EditText
+        android:id="@+id/confirmNewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:hint="@string/confirmPassword"
+        android:inputType="textPassword"
+        android:layout_below="@+id/password2"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/confirmSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirmNewPassword"
+        android:text="@string/confirmSignUp"
+        android:textColor="@color/white"
+        android:background="@color/blue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+
+
+</com.google.android.material.circularreveal.CircularRevealRelativeLayout>

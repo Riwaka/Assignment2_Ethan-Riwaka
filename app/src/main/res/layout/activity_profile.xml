@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.CircularRevealRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"
+        />
+
+    <RelativeLayout
+        android:id="@+id/backgroundRel"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:background="@color/blue"
+        android:layout_below="@id/app_bar"
+        />
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="120dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/avatar"
+        />
+
+    <TextView
+        android:id="@+id/usernameProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username example"
+        android:layout_below="@+id/avatar"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/profileLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Zealand"
+        android:layout_below="@+id/usernameProfile"
+        android:layout_centerHorizontal="true"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/listButton"
+        android:layout_width="212dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:text="List"
+        android:textColor="@color/white"
+        android:background="@drawable/mybutton"
+        />
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/home"
+        android:layout_alignRight="@+id/listButton"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/mybutton"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"/>
+
+
+    <TextView
+        android:id="@+id/recommended"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recommended"
+        android:layout_above="@id/click"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click the Images"
+
+        android:layout_centerHorizontal="true"
+        android:textSize="10sp"
+        android:layout_above="@+id/recommend2"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        />
+
+    <ImageButton
+        android:id="@+id/recommend1"
+        android:layout_width="140dp"
+        android:layout_height="180dp"
+        android:src="@drawable/monster"
+        android:layout_alignParentBottom="true"
+        />
+    <ImageButton
+        android:id="@+id/recommend2"
+        android:layout_width="140dp"
+        android:layout_height="180dp"
+        android:src="@drawable/homunculus"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/recommend1"
+        />
+    <ImageButton
+        android:id="@+id/recommend3"
+        android:layout_width="140dp"
+        android:layout_height="180dp"
+        android:src="@drawable/tokyoghoul"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/recommend2"
+        />
+
+
+
+
+</com.google.android.material.circularreveal.CircularRevealRelativeLayout>

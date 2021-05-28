@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.CircularRevealRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/blue">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"
+        />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/simpleTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/app_bar"
+        android:background="@color/blue"
+        app:tabTextColor="@color/white">
+    </com.google.android.material.tabs.TabLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/punpunImage"
+        android:background="@color/white"
+        android:layout_below="@+id/simpleTabLayout"/>
+
+    <ImageView
+        android:id="@+id/punpunImage"
+        android:layout_width="67dp"
+        android:layout_height="97dp"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/punpunsmall"
+        android:layout_alignParentLeft="true"
+        />
+    <TextView
+        android:id="@+id/punpunTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="630dp"
+        android:layout_toRightOf="@id/punpunImage"
+        android:text="Goodnight Punpun"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="15dp"/>
+    <TextView
+        android:id="@+id/punpunVolumes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/punpunImage"
+        android:layout_below="@id/punpunTitle"
+        android:textColor="@color/white"
+        android:text="(13 volumes)"
+        android:textSize="10dp"/>
+
+    <TextView
+        android:id="@+id/punpunDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/punpunImage"
+        android:layout_below="@id/punpunVolumes"
+        android:textColor="@color/white"
+        android:text="Mar 2007 - Nov 2013"
+        android:textSize="10dp"/>
+
+    <ImageView
+        android:id="@+id/onePunchImage"
+        android:layout_width="67dp"
+        android:layout_height="97dp"
+        android:layout_alignParentBottom="true"
+        app:srcCompat="@drawable/onepunch"
+        android:layout_toLeftOf="@id/onePunchTitle"
+        />
+    <TextView
+        android:id="@+id/onePunchTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="630dp"
+        android:layout_alignParentRight="true"
+        android:text="One Punch Man"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="15dp"/>
+    <TextView
+        android:id="@+id/onePunchVolumes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/onePunchImage"
+        android:layout_below="@id/onePunchTitle"
+        android:textColor="@color/white"
+        android:text="(23 volumes)"
+        android:textSize="10dp"/>
+
+    <TextView
+        android:id="@+id/onePunchDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/onePunchImage"
+        android:layout_below="@id/onePunchVolumes"
+        android:textColor="@color/white"
+        android:text="June 2012 - Now"
+        android:textSize="10dp"/>
+
+
+
+</com.google.android.material.circularreveal.CircularRevealRelativeLayout>
