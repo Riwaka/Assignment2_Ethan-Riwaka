@@ -80,7 +80,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Recommended"
-        android:layout_above="@id/click"
+        android:layout_below="@id/home"
         android:layout_centerHorizontal="true"
         android:textSize="25dp"
         android:textStyle="bold"
@@ -94,7 +94,7 @@
 
         android:layout_centerHorizontal="true"
         android:textSize="10sp"
-        android:layout_above="@+id/recommend2"
+        android:layout_below="@id/recommended"
         android:textStyle="italic"
         android:textColor="@color/black"
         />
@@ -104,14 +104,14 @@
         android:layout_width="140dp"
         android:layout_height="180dp"
         android:src="@drawable/monster"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@id/click"
         />
     <ImageButton
         android:id="@+id/recommend2"
         android:layout_width="140dp"
         android:layout_height="180dp"
         android:src="@drawable/homunculus"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@id/click"
         android:layout_toRightOf="@+id/recommend1"
         />
     <ImageButton
@@ -119,7 +119,7 @@
         android:layout_width="140dp"
         android:layout_height="180dp"
         android:src="@drawable/tokyoghoul"
-        android:layout_alignParentBottom="true"
+        android:layout_below="@id/click"
         android:layout_toRightOf="@+id/recommend2"
         />
 

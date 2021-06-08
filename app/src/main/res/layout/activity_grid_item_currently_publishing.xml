@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GridItemMostPopular"
+    >
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"
+        />
+
+    <RelativeLayout
+        android:id="@+id/backgroundRel"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/blue"
+        android:layout_below="@id/app_bar"
+        />
+
+    <TextView
+        android:id="@+id/mangaName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/app_bar"
+        android:text="Berserk"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/mangaImage"
+        />
+    <TextView
+        android:id="@+id/mangaAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Author"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/mangaImage"
+        android:layout_below="@id/mangaName"
+        />
+    <TextView
+        android:id="@+id/mangaPublishDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Publish date"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/mangaImage"
+        android:layout_below="@id/mangaAuthor"
+        />
+    <TextView
+        android:id="@+id/mangaRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Rating"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_toRightOf="@id/mangaImage"
+        android:layout_below="@id/mangaPublishDate"
+        />
+
+    <ImageView
+        android:id="@+id/mangaImage"
+        android:layout_width="140dp"
+        android:layout_height="160dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/app_bar"
+        android:src="@drawable/berserkold"/>
+
+    <TextView
+        android:id="@+id/synopsis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Synopsis: "
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_below="@id/mangaImage"
+        />
+
+
+    <TextView
+        android:id="@+id/mangaDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="pew"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:justificationMode="inter_word"
+        android:layout_below="@id/synopsis"
+        />
+
+
+
+
+</RelativeLayout>

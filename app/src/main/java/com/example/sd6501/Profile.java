@@ -1,15 +1,21 @@
 package com.example.sd6501;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.RatingBar;
+import androidx.appcompat.widget.Toolbar;
 
 public class Profile extends AppCompatActivity {
 
@@ -18,7 +24,7 @@ public class Profile extends AppCompatActivity {
     ImageButton imageButton1;
     ImageButton imageButton2;
     ImageButton imageButton3;
-    //RatingBar ratingBarA.setRating(4.14);
+    Toolbar toolbar;
 
 
 
@@ -26,6 +32,12 @@ public class Profile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+
+        toolbar = (Toolbar)findViewById(R.id.app_bar);
+        setSupportActionBar(toolbar);
+
+        ActionBar ab=getSupportActionBar();
+        ab.setDisplayHomeAsUpEnabled(true);
 
         Button button2 = (Button)findViewById(R.id.home);
         button2.setOnClickListener(new View.OnClickListener() {
@@ -91,5 +103,22 @@ public class Profile extends AppCompatActivity {
             }
         });
 
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.profilemenu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.profileSettings:
+                Intent profileSettings = new Intent(this, ProfileSettings.class);
+                startActivity(profileSettings);
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }

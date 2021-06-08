@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileSettings">
+
+    <TextView
+        android:id="@+id/settingsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:textSize="50dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/settingsTitle"
+        android:textStyle="bold"/>
+
+<RelativeLayout
+    android:id="@+id/view"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+
+    android:background="@drawable/background"
+    android:layout_below="@id/account">
+
+    <TextView
+        android:id="@+id/changeUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Username"
+        android:textSize="30dp"
+        />
+
+    <TextView
+        android:id="@+id/changePassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Password"
+        android:layout_below="@id/changeUsername"
+        android:textSize="30dp"/>
+
+    <ImageView
+        android:id="@+id/arrow1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/arrow"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="7dp"/>
+
+    <ImageView
+        android:id="@+id/arrow2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/arrow"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/arrow1"
+        android:layout_marginTop="7dp"/>
+
+</RelativeLayout>
+
+    <TextView
+        android:id="@+id/notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notifications"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:layout_below="@id/view"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/background"
+        android:layout_below="@id/notifications">
+
+        <TextView
+            android:id="@+id/notificationsSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Notifications"
+            android:textSize="30dp"
+            />
+
+        <TextView
+            android:id="@+id/appNotifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="App Notifications"
+            android:layout_below="@id/notificationsSettings"
+            android:textSize="30dp"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch1"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="7dp"/>
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch2"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/switch1"
+            android:layout_marginTop="7dp"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view2"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/mybutton"
+        android:text="Logout"/>
+
+
+
+</RelativeLayout>
