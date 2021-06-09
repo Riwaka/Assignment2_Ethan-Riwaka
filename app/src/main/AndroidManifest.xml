@@ -9,10 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name=".ProfileSettings"></activity>
+        <activity android:name=".ProfileSettings"
+            android:parentActivityName=".Profile"/>
         <activity
             android:name=".GridItemCurrentlyPublishing"
-            android:parentActivityName=".MainActivity"></activity>
+            android:parentActivityName=".MainActivity">
+
+        </activity>
         <activity
             android:name=".GridItemMostPopular"
             android:parentActivityName=".MainActivity" />

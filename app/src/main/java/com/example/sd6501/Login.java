@@ -50,7 +50,7 @@ public class Login extends AppCompatActivity {
         });
     }
 
-    private void validate(String userID, String userPassword){
+    public void validate(String userID, String userPassword){
         if(("Demo".equals(userID)) && ("Password".equals(userPassword))){
             Intent intent= new Intent(Login.this, Profile.class);
             startActivity(intent);

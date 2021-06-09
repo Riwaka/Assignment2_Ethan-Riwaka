@@ -6,12 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".ProfileSettings">
 
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar"
+        />
+
     <TextView
         android:id="@+id/settingsTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Settings"
         android:textSize="50dp"
+        android:layout_below="@+id/app_bar"
         android:textColor="@color/black"
         android:textStyle="bold"/>
     <TextView

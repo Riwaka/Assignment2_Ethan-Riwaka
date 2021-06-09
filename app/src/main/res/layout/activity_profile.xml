@@ -102,14 +102,14 @@
     <ImageButton
         android:id="@+id/recommend1"
         android:layout_width="140dp"
-        android:layout_height="180dp"
+        android:layout_height="match_parent"
         android:src="@drawable/monster"
         android:layout_below="@id/click"
         />
     <ImageButton
         android:id="@+id/recommend2"
         android:layout_width="140dp"
-        android:layout_height="180dp"
+        android:layout_height="match_parent"
         android:src="@drawable/homunculus"
         android:layout_below="@id/click"
         android:layout_toRightOf="@+id/recommend1"
@@ -117,7 +117,7 @@
     <ImageButton
         android:id="@+id/recommend3"
         android:layout_width="140dp"
-        android:layout_height="180dp"
+        android:layout_height="match_parent"
         android:src="@drawable/tokyoghoul"
         android:layout_below="@id/click"
         android:layout_toRightOf="@+id/recommend2"

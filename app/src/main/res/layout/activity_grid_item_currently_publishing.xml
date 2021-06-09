@@ -16,7 +16,7 @@
         android:id="@+id/backgroundRel"
         android:layout_width="match_parent"
         android:layout_height="160dp"
-        android:background="@color/blue"
+        android:background="@color/white"
         android:layout_below="@id/app_bar"
         />
 
@@ -25,21 +25,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/app_bar"
+        android:layout_below="@id/mangaImage"
         android:text="Berserk"
         android:textSize="20dp"
         android:textColor="@color/black"
-        android:layout_toRightOf="@id/mangaImage"
+        android:typeface="serif"
+        android:gravity="center"
+        android:textStyle="italic"
         />
     <TextView
         android:id="@+id/mangaAuthor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Author"
+        android:text="Miura, Kentarou"
         android:textSize="20dp"
         android:textColor="@color/black"
-        android:layout_toRightOf="@id/mangaImage"
+        android:typeface="serif"
         android:layout_below="@id/mangaName"
         />
     <TextView
@@ -47,10 +49,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Publish date"
+        android:text="Aug 25, 1989 to Now"
         android:textSize="20dp"
         android:textColor="@color/black"
-        android:layout_toRightOf="@id/mangaImage"
+        android:typeface="serif"
         android:layout_below="@id/mangaAuthor"
         />
     <TextView
@@ -58,18 +60,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:text="Rating"
+        android:text="9.37"
         android:textSize="20dp"
         android:textColor="@color/black"
-        android:layout_toRightOf="@id/mangaImage"
+        android:typeface="serif"
         android:layout_below="@id/mangaPublishDate"
         />
+
+
+
+
 
     <ImageView
         android:id="@+id/mangaImage"
         android:layout_width="140dp"
         android:layout_height="160dp"
-        android:layout_alignParentLeft="true"
+
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_below="@id/app_bar"
@@ -82,20 +88,21 @@
         android:text="Synopsis: "
         android:textStyle="bold"
         android:textColor="@color/black"
-        android:layout_below="@id/mangaImage"
+        android:typeface="serif"
+        android:layout_above="@id/mangaDescription"
         />
 
 
     <TextView
         android:id="@+id/mangaDescription"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="380dp"
         android:text="pew"
         android:textColor="@color/black"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:justificationMode="inter_word"
-        android:layout_below="@id/synopsis"
+        android:layout_alignParentBottom="true"
         />
 
 

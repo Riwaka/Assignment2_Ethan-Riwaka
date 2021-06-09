@@ -36,9 +36,6 @@ public class Profile extends AppCompatActivity {
         toolbar = (Toolbar)findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);
 
-        ActionBar ab=getSupportActionBar();
-        ab.setDisplayHomeAsUpEnabled(true);
-
         Button button2 = (Button)findViewById(R.id.home);
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
